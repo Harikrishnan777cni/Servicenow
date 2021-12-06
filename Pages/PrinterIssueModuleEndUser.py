@@ -64,11 +64,11 @@ class PrinterIssueModuleEndUser(BasePage):
             self.fill_description()
             self.submit()
 
-            allure.attach(self.driver.get_screenshot_as_png(), name="Printer Issue",
-                          attachment_type=AttachmentType.PNG)
+            # allure.attach(self.driver.get_screenshot_as_png(), name="Printer Issue",
+            #               attachment_type=AttachmentType.PNG)
 
         except:
 
-            allure.attach(self.driver.get_screenshot_as_png(), name="Printer Issue",
-                          attachment_type=AttachmentType.PNG)
+            # allure.attach(self.driver.get_screenshot_as_png(), name="Printer Issue",
+            #               attachment_type=AttachmentType.PNG)
             assert False
